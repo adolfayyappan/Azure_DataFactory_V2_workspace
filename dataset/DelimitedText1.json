@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "outputcvs.csv",
+				"fileName": "outputcvs",
 				"container": "blogcontainerio"
 			},
 			"columnDelimiter": ",",
