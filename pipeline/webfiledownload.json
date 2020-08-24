@@ -1,0 +1,33 @@
+{
+	"name": "webfiledownload",
+	"properties": {
+		"activities": [
+			{
+				"name": "Web1",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://www.eia.gov/dnav/pet/xls/PET_MOVE_WKLY_DC_NUS-Z00_MBBLPD_W.xls",
+					"method": "GET",
+					"linkedServices": [
+						{
+							"referenceName": "AzureBlobStorage1",
+							"type": "LinkedServiceReference"
+						}
+					]
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2020-08-24T22:42:12Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
