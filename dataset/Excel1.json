@@ -8,11 +8,9 @@
 		"annotations": [],
 		"type": "Excel",
 		"typeProperties": {
-			"sheetName": "Sheet1",
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "Financial Sample.xlsx",
-				"container": "blogcontainerio"
+				"container": "pubcontainer"
 			},
 			"firstRowAsHeader": true
 		},

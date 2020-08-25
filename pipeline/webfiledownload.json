@@ -16,19 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"url": "https://www.eia.gov/dnav/pet/xls/PET_MOVE_WKLY_DC_NUS-Z00_MBBLPD_W.xls",
-					"method": "GET",
-					"linkedServices": [
-						{
-							"referenceName": "AzureBlobStorage1",
-							"type": "LinkedServiceReference"
-						}
-					],
-					"datasets": [
-						{
-							"referenceName": "Binary1",
-							"type": "DatasetReference"
-						}
-					]
+					"method": "GET"
 				}
 			},
 			{
@@ -51,36 +39,8 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"source": {
-						"type": "BinarySource",
-						"storeSettings": {
-							"type": "AzureBlobStorageReadSettings",
-							"recursive": true
-						},
-						"formatSettings": {
-							"type": "BinaryReadSettings"
-						}
-					},
-					"sink": {
-						"type": "BinarySink",
-						"storeSettings": {
-							"type": "AzureBlobStorageWriteSettings"
-						}
-					},
 					"enableStaging": false
-				},
-				"inputs": [
-					{
-						"referenceName": "Binary1",
-						"type": "DatasetReference"
-					}
-				],
-				"outputs": [
-					{
-						"referenceName": "Binary2",
-						"type": "DatasetReference"
-					}
-				]
+				}
 			}
 		],
 		"annotations": [],
