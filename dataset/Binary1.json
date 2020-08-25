@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "eia.slx",
+				"fileName": "eia.xls",
 				"container": "pubcontainer"
 			}
 		}
