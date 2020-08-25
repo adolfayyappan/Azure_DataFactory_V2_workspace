@@ -22,6 +22,12 @@
 							"referenceName": "AzureBlobStorage1",
 							"type": "LinkedServiceReference"
 						}
+					],
+					"datasets": [
+						{
+							"referenceName": "Binary1",
+							"type": "DatasetReference"
+						}
 					]
 				}
 			}
